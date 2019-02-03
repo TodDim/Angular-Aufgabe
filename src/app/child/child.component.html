@@ -1,0 +1,22 @@
+<table #dataTable class="table-responsive" class="display" style="width:100%">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Vorname</th>
+          <th>E-Mail</th>
+          <th>Telefon</th>
+                  
+      </tr>
+  </thead>
+  <tbody>
+    
+      <tr *ngFor="let person of this.persons" (dblclick)="refreshParent(person)">
+          <td>{{person.Name}}</td>
+          <td>{{person.Vorname}}</td>
+          <td>{{person["E-mail"]}}</td>
+          <td>{{person.Telefon}}</td>
+                  
+      </tr>
+
+
+</table>
