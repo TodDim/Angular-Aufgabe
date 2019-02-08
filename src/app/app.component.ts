@@ -9,10 +9,7 @@ import {ChildComponent} from './child/child.component';
 })
 export class AppComponent {
   
-  person={Name: "Muller",
-  Vorname: "Max",
-  "E-mail":"m@gmail.com",
-  Telefon: "+ 31 11 123"};
+  person=[ "Muller", "Max", "m@gmail.com", "+ 31 11 123" ];
   
   constructor(private modalService: NgbModal) {}
   open() {
